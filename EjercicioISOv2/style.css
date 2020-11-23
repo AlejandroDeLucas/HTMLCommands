@@ -1,0 +1,164 @@
+*{
+    box-sizing:border-box;
+}
+
+@font-face{
+  font-family: "Lucida Console";
+  src: url("Fonts/LUCON.TTF");
+}
+
+.header{
+    overflow:hidden;/*Evitará que si un contenido se salde de su área se vea*/
+    border:3px solid;
+    background: #227d04;
+    background-image: -webkit-linear-gradient(top, #227d04, #629e0e);
+    background-image: -moz-linear-gradient(top, #227d04, #629e0e);
+    background-image: -ms-linear-gradient(top, #227d04, #629e0e);
+    background-image: -o-linear-gradient(top, #227d04, #629e0e);
+    background-image: linear-gradient(to bottom, #227d04, #629e0e);
+    border-radius: 5px;
+    height:80px;
+    color:greenyellow;
+    text-align: center;
+    font-weight:bold;
+    }
+
+ html,body{
+    background: #0a0a0a;
+    background-image: -webkit-linear-gradient(top, #0a0a0a, #133d02);
+    background-image: -moz-linear-gradient(top, #0a0a0a, #133d02);
+    background-image: -ms-linear-gradient(top, #0a0a0a, #133d02);
+    background-image: -o-linear-gradient(top, #0a0a0a, #133d02);
+    background-image: linear-gradient(to bottom, #0a0a0a, #133d02);
+    height: 100%;
+    font-family:'Lucida Console', arial;
+     margin: 0px;
+     
+    }
+#desc {
+      text-align:left;
+      color:green;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+#texto {
+      text-align:left;
+      color:green;
+      font-weight: bold;
+      padding: 5px;
+    }    
+     
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+       width: 100%;
+    }
+    
+        
+    
+    
+    .menu li {
+    background-color: transparent;
+    color:whitesmoke;
+    border:3px double whitesmoke;
+    border-radius:5px;
+    cursor:pointer;
+    text-align:center;
+    transition:0.75s;
+    font-weight:bold;
+    }
+    .menu li:hover {
+      cursor: pointer;
+      font-size: 25px;
+      transition: 0.35s;
+    }
+
+    
+   
+@media only screen and (min-width:600px){
+    
+       
+      .col-3 {width: 15%;}
+      .col-s-4 {width: 100%;}
+      .col-6 {width: 70%;}
+      .col-12 {width: 100%;}
+
+  
+      }
+        
+  .menu li:hover {
+    background: #7dff12;
+    background-image: -webkit-linear-gradient(top, #7dff12, #bdfa61);
+    background-image: -moz-linear-gradient(top, #7dff12, #bdfa61);
+    background-image: -ms-linear-gradient(top, #7dff12, #bdfa61);
+    background-image: -o-linear-gradient(top, #7dff12, #bdfa61);
+    background-image: linear-gradient(to bottom, #7dff12, #bdfa61);
+    color:darkgreen;
+    font-size:20px;
+    }
+    .menu li:active {
+    color:red;
+    font-size:25px;
+    }    
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+
+        height: 85%;
+      }
+
+      
+    @media only screen and (max-width:599px) {
+
+      .header {
+        font-size:10px;
+        height:40px;
+      }
+      .menu li{
+       font-size:10px;
+       padding: 10px;
+       width:48%;
+    }  
+        .menu li:hover {
+        font-size: 10px;
+      
+    }
+        .menu li:active {
+    color:red;
+    font-size:12px;
+    }    
+        .obj2{display:none;}
+        #texto{font-size:15px;}
+        #desc{font-size:12px;}
+    }
+    
+
+    
+    .footer {
+    background: #468004;
+    background-image: -webkit-linear-gradient(top, #468004, #4bab26);
+    background-image: -moz-linear-gradient(top, #468004, #4bab26);
+    background-image: -ms-linear-gradient(top, #468004, #4bab26);
+    background-image: -o-linear-gradient(top, #468004, #4bab26);
+    background-image: linear-gradient(to bottom, #468004, #4bab26);
+    padding: .5rem .8rem;
+    text-align: center;
+    font-weight:bold;
+    color:darkgreen;
+    border-radius: 5px;
+    border:3px solid;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    }    

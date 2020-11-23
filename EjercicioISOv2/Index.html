@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>CMD Comands</title>
+    <meta name="author" content="Alejandro De Lucas Nuñez">
+    <meta name="description" content="Tutorial de comandos para aprender como trabajar con CMD">
+    <link rel="shortcut icon" href="pictures/favicon.ico" type=image/icon>
+    <link rel="stylesheet" href="style.css">
+    <script src="commands.js"></script>
+    <audio id="sound">
+        <source src="Sound/sound.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tutorial de comandos CMD</h1>
+</div>
+
+<div class="row container">
+  <div class="col-3 col-s-12 menu interior"> 
+    
+      
+  <ul>
+   <li id="cd" onclick="comando(id)" class="col-s-4">CD</li>
+    <li id="rd" onclick="comando(id)" class="col-s-4">RD</li>
+    <li id="md" onclick="comando(id)" class="col-s-4">MD</li>
+    <li id="dir" onclick="comando(id)"class="col-s-4">DIR</li>
+    <li id="move" onclick="comando(id)"class="col-s-4">MOVE</li>
+    <li id="ren" onclick="comando(id)"class="col-s-4">REN</li>
+    
+  </ul>
+
+    
+  </div>
+
+  <div class="col-6 col-s-12 interior">
+    <div>
+      <h3 id="texto">Clicka en los comandos para ver su sintaxis y funcionamiento</h3>
+
+        <h4 id="desc">Se mostrará lo que hace, si procede unos parámetros, un ejemplo y una imagen</h4>
+        <img class="obj2" src="">
+    </div>
+  </div>
+
+    
+  <div class="col-3 col-s-12 interior">
+    <div class="menu">
+        <ul>
+            <li id="type" onclick="comando(id)" class="col-s-4">TYPE</li>
+            <li id="copycon" onclick="comando(id)" class="col-s-4"> COPY CON</li>
+            <li id="del" onclick="comando(id)" class="col-s-4">DEL</li>
+            <li id="copy" onclick="comando(id)" class="col-s-4">COPY</li>
+            <li id="tree" onclick="comando(id)" class="col-s-4">TREE</li>
+            <li id="cls" onclick="comando(id)" class="col-s-4">CLS</li>
+          </ul>
+          
+    </div>
+    
+  </div>
+
+ 
+</div>
+    
+<div class="footer">
+    <p>Alejandro De Lucas Nuñez - 1º ASIX</p>
+</div>
+
+
+
+</body>
+
+</html>
